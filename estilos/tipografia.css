@@ -1,0 +1,426 @@
+
+html,
+body{
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+
+
+}
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.responsive{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.fondo {
+	background-image: url(../imagenes/fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+}
+
+.cabecera {
+	background-color: #FFCCFF;
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+    padding-right: 7px;
+}
+
+.menu  {
+	width: 100%;
+	display: flex;
+	flex: 1;
+	column-gap: 10px;
+	margin: 50;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.menu li a {
+	color: #800080;
+}
+
+
+.logo {
+	width: 100%;
+	display: flex;
+	flex: 1;
+}
+
+article h1 {
+	color: #C560FF;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	font-family: 'BhuTuka Expanded One', cursive;
+}
+
+p {
+	color: #330066;
+	width: 100%;
+	margin: auto;
+	font-size: 18px;
+	font-weight: 800;
+	padding-left: 2%;
+	padding-right: 2%;
+
+}
+
+h2 a {
+	color: #800080;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+	font-family: 'BhuTuka Expanded One', cursive;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 1%;
+}
+
+.opciones h1 a {
+	color: #800080;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+	font-family: 'BhuTuka Expanded One', cursive;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 1%;
+}
+
+.imagenes {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 6%;
+	grid-row-gap: 2%;
+	padding: 10%;
+	width: 100%;
+	margin: auto;
+	color: #FF3DB0;
+	font-size: 15px;
+	font-weight: italic;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	
+}
+
+.imagenes > div {
+	border: 2px solid #FFE8E8;
+	background-color: #FFE8E8;
+}
+
+.imagenes2 {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 6%;
+	grid-row-gap: 2%;
+	width: 100%;
+	margin: auto;
+	padding: 10%;
+	color: #FF3DB0;
+	font-size: 15px;
+	font-weight: italic;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	
+}
+
+.imagenes2 > div {
+	border: 2px solid #FFE8E8;
+	background-color: #FFE8E8;
+}
+
+.fondo {
+	background-image: url(../imagenes/fondo2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.historia {
+	background-image: url(../imagenes/fondo3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.historia p {
+	color: #330066;
+	width: 100%;
+	margin: auto;
+	font-size: 17px;
+	font-weight: 800;
+	
+}
+
+.productos h1 {
+	color: #003399;
+	width: 100%;
+	margin: auto;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+	font-family: 'BhuTuka Expanded One', cursive;
+}
+
+.productos h2 {
+	color: #FF33CC;
+	width: 100%;
+	margin: auto;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.productos ul li {
+	color: #330099;
+	width: 100%;
+	margin: auto;
+	font-size: 14px;
+	font-weight: 900;
+	border-bottom: 20px;
+	margin: auto;
+	text-align: center;
+}
+
+
+
+label {
+	color: #FF3DB0;
+	width: 100%;
+	margin: auto;
+	font-size: 17px;
+	font-weight: bold;
+	
+}
+
+span {
+	color: #FF3DB0;
+	width: 100%;
+	margin: auto;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+
+.gracias {
+	color: #330066;
+	width: 100%;
+	margin: auto;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;	
+}
+
+.mensaje {
+	color: #330066;
+	width: 100%;
+	margin: auto;
+	font-size: 14px;
+	font-weight: italic;
+	text-align: center;
+}
+
+footer {
+	background-color: #FFFAAE;
+	width: 100%;
+	margin: auto;
+}
+
+.redes {
+	height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redes li a {
+		color: #800080;
+		width: 100%;
+		display: flex;
+		flex: 1;
+		column-gap: 10px;
+		font-weight: bold;
+}
+
+.pie li {
+	color: black;
+		display: flex;
+	    flex: 1;
+	    font-weight: 200;
+	    font-size: 12px;
+	    align-items: center;
+	    text-align: center;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    align-content: center;
+	    justify-content: center;
+}
+
+@media (min-width: 767px){
+
+	.fondo {
+	background-image: url(../imagenes/fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+	.cabecera {
+	background-color: #DDBBFF;
+	height: 90px;
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+}
+
+	.menu  {
+		width: 100%;
+		display: flex;
+		flex: 1;
+		column-gap: 100px;
+		padding-right: 200px;
+		font-weight: bold;
+		color: #800080;
+}
+
+	.logo {
+		padding-left: 60px;
+		width: 100%;
+		display: flex;
+		flex: 1;
+}
+
+	article h1 {
+		color: #C560FF;
+		font-size: 40px;
+		text-align: center;
+}
+
+
+	.imagenes {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: repeat(1, 1fr);
+	grid-column-gap: 1%;
+	grid-row-gap: 1%;
+	
+	}
+
+	.imagenes2 {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;;
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 1%;
+	grid-row-gap: 1%;
+	
+	}
+
+
+	.historia {
+	background-image: url(../imagenes/fondo3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+	.historia p {
+	color: #990033;
+}
+
+
+	.productos h1 {
+	color: #003399;
+	font-size: 28px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+	font-family: 'BhuTuka Expanded One', cursive;
+}
+
+.productos h2 {
+	color: #FF33CC;
+	font-size: 23px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.productos ul li {
+	color: #330099;
+	font-size: 17px;
+	font-weight: 900;
+	border-bottom: 20px;
+	margin: auto;
+	text-align: center;
+}
+
+
+	.redes {
+	height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-between;
+}
+
+	.redes li a {
+		width: 100%;
+		display: flex;
+		flex: 1;
+		column-gap: 100px;
+		padding-right: 100px;
+		padding-left: 100px;
+		font-weight: bold;
+}
+
+	.pie li {
+		display: flex;
+	    flex: 1;
+	    font-weight: bold;
+	    align-items: center;
+	    text-align: center;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    align-content: center;
+	    justify-content: center;
+}
+
+}
