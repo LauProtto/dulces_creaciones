@@ -37,6 +37,7 @@ p {
 
 .cabecera {
 	background-color: #FFCCFF;
+	background-image: linear-gradient(to bottom, #FFCCFF 1%, transparent 100%);
 	width: 100%;
     display: flex;
     flex-direction: row;
@@ -56,8 +57,13 @@ p {
 	text-decoration: none;
 }
 
-.menu li a {
+.menu li a:hover {
 	color: #800080;
+	transition: all 0.10s ease-in-out;
+}
+
+.menu li a:hover {
+	opacity: 0.7;
 }
 
 
@@ -126,9 +132,18 @@ h2 a {
 	
 }
 
+
 .imagenes > div {
 	border: 2px solid #FFE8E8;
 	background-color: #FFE8E8;
+}
+
+.imagenes img {
+	transform: rotate(15deg);
+}
+
+.imagenes img:hover {
+	transform: rotate(-15deg) scale(1.2);
 }
 
 .imagenes2 {
@@ -151,6 +166,14 @@ h2 a {
 .imagenes2 > div {
 	border: 2px solid #FFE8E8;
 	background-color: #FFE8E8;
+}
+
+.imagenes2 img {
+	transform: rotate(-15deg);
+}
+
+.imagenes2 img:hover {
+	transform: rotate(15deg) scale(1.2);
 }
 
 .fondo {
@@ -252,7 +275,6 @@ footer {
 }
 
 .redes {
-	height: 30px;
     width: 100%;
     display: flex;
     flex-direction: row;
