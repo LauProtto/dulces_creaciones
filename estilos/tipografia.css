@@ -321,7 +321,7 @@ footer {
 
 	.cabecera {
 	background-color: #DDBBFF;
-	height: 90px;
+	height: 15%;
 	width: 100%;
     display: flex;
     flex-direction: row;
@@ -412,37 +412,5 @@ footer {
 }
 
 
-	.redes {
-	height: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    align-items: center;
-    justify-content: space-between;
-}
-
-	.redes li a {
-		width: 100%;
-		display: flex;
-		flex: 1;
-		column-gap: 100px;
-		padding-right: 100px;
-		padding-left: 100px;
-		font-weight: bold;
-}
-
-	.pie li {
-		display: flex;
-	    flex: 1;
-	    font-weight: bold;
-	    align-items: center;
-	    text-align: center;
-	    flex-direction: column;
-	    flex-wrap: nowrap;
-	    align-content: center;
-	    justify-content: center;
-}
 
 }
