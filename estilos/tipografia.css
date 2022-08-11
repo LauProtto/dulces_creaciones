@@ -39,12 +39,6 @@ p {
 	background-color: #FFCCFF;
 	background-image: linear-gradient(to bottom, #FFCCFF 1%, transparent 100%);
 	width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    align-items: center;
-    padding-right: 7px;
 }
 
 .menu  {
