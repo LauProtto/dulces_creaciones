@@ -1,4 +1,5 @@
 
+
 html,
 body{
 	margin: 0;
@@ -384,15 +385,6 @@ footer {
     flex-direction: row;
 }
  
- .copy {
-	display: flex;
-	margin: auto;
-	width: 100%;
-	flex-direction: row;
-    align-content: space-between;
-    justify-content: space-around;
-    align-items: center;
-}
 
 
 
@@ -607,4 +599,11 @@ footer {
     flex-direction: row;
 }
 
-}
+
+
+
+
+
+
+
+
