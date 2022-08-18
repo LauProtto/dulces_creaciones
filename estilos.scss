@@ -8,12 +8,10 @@ $color-dos: #FFCCFF;
 	max-width: 1200px;
 	box-sizing: border-box;
 	text-decoration: none;
-
 }
 
-	
+
 .cabecera {
-		
 	background-color: #FFBFEF;
 	background-image: linear-gradient(to bottom, #D2A5FF 1%, transparent 100%);
 	width: 100%;
@@ -25,12 +23,9 @@ $color-dos: #FFCCFF;
 	justify-content: center;
 
     @media (min-width: 767px){
-			
-			width: 100%;
-			display: flex;
-		}	flex: 1;
-			
-	}
+		width: 100%;
+	}	
+}
 	
 	
 
@@ -44,60 +39,48 @@ $color-dos: #FFCCFF;
 	margin: 0;
 	paddin:0;
 
-		@media (min-width: 767px){
-
-			width: 100%;
-			display: flex;
-			font-size: 40px;
-			column-gap: 50px;
-			justify-content: center;
-			margin: 2;
-	    	paddin:2;
-			
-		}
+	@media (min-width: 767px){
+		width: 100%;
+		font-size: 40px;
+		column-gap: 50px;
 	}
+}
 	
 
 
 .titulos { 
-		font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 
-
-		
-		h1 {
-			color: $color-uno;
-			background-color: $color-dos;
-			font-size: 40px;
-			font-weight: bold;
-			text-align: center;
-			font-family: 'BhuTuka Expanded One', cursive;
-			margin: 0;
-	    	paddin:0;
-
-		}
-
-
-		h2  {
-			color: $color-uno;
-			font-size: 30px;
-			text-align: center;
-	    	background-color: $color-dos;
-	    	margin: 0;
-	    	paddin:0;
-	    	
-	    }
-
-	    h3 {
-			color: $color-uno;
-			font-size: 35px;
-			text-align: center;
-
-		}
-		
+	h1 {
+		color: $color-uno;
+		background-color: $color-dos;
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+		font-family: 'BhuTuka Expanded One', cursive;
+		margin: 0;
+    	paddin: 0;
 	}
+
+
+	h2  {
+		color: $color-uno;
+		font-size: 30px;
+		text-align: center;
+    	background-color: $color-dos;
+    	margin: 0;
+    	paddin: 0;
+    }
+
+    h3 {
+		color: $color-uno;
+		font-size: 35px;
+		text-align: center;
+	}
+	
+}
 		
 .imagenes {
-
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: repeat(2, 1fr);
@@ -113,17 +96,13 @@ $color-dos: #FFCCFF;
 	align-items: center;
 	justify-items: stretch;
 
-
-		@media (min-width: 767px){
-
-		    display: grid;
-			grid-template-columns: 25% 25% 25% 25%;
-			grid-template-rows: repeat(1, 1fr);
-			grid-column-gap: 1%;
-			grid-row-gap: 1%;
-			padding: 10px;
-		}
-
+	@media (min-width: 767px){
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-rows: 1fr;
+		grid-column-gap: 1%;
+		grid-row-gap: 1%;
+		padding: 10px;
+	}
 				
 }
 
@@ -131,7 +110,6 @@ $color-dos: #FFCCFF;
 	
 
 .imagenes2 {
-
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: repeat(2, 1fr);
@@ -144,19 +122,16 @@ $color-dos: #FFCCFF;
 	text-align: center;
 	padding-top: 30px;
 
-		@media (min-width: 767px){
-
-		    display: grid;
-			grid-template-columns: 25% 25% 25% 25%;;
-			grid-template-rows: repeat(1, 1fr);
-			grid-column-gap: 4px;
-			grid-row-gap: 4px;
-			padding: 10px;
-		}
+	@media (min-width: 767px){
+		grid-template-columns: 25% 25% 25% 25%;;
+		grid-template-rows: 1fr;
+		grid-column-gap: 4px;
+		grid-row-gap: 4px;
+		padding: 10px;
+	}
 
 
 	div {
-			
 		background-color: #FFE8E8;
 	}
 
@@ -171,13 +146,10 @@ $color-dos: #FFCCFF;
 	align-items: center;
 	padding: 20px;
 
-		@media (min-width: 767px){
-			
-			display: flex;
-			justify-content: center;
-			padding: 10px;
-   
-			}
+	@media (min-width: 767px){
+		justify-content: center;
+		padding: 10px;
+	}
 }
 			
 		
@@ -186,9 +158,14 @@ $color-dos: #FFCCFF;
 
 
 .grilla-cumple {
+	p {
+		color: $color-uno;
+		font-size: 15px;
+		text-align: center;
+	    padding: 30px;
+	}
 
 	@media (min-width: 767px){
-
 		border: none;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -199,41 +176,17 @@ $color-dos: #FFCCFF;
 		margin: 0px;
 		background-color: #FFF7DF;
 
-			p {
-				color: $color-uno;
-				font-size: 25px;
-				text-align: center;
-			    padding: 30px;
-			}
-
+		p {
+			color: $color-uno;
+			font-size: 25px;
+			text-align: center;
+			padding: 30px;
+		}
 	}
-
-	p {
-		color: $color-uno;
-		font-size: 15px;
-		text-align: center;
-	    padding: 30px;
-
-	    }
 }
     	
 		
 .grilla {
-
-	@media (min-width: 767px){
-		border: none;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-		justify-content: space-evenly;
-		align-items: center;
-		padding: 50px;
-		margin: 0px;
-		background-color: #FFF7DF;
-
-		}
-
-
 	border: none;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -244,23 +197,24 @@ $color-dos: #FFCCFF;
 	margin-top: 60px;
 	background-color: #FFF7DF;
 
+	@media (min-width: 767px){
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		margin: 0px;
+	}
 
 	.metodos-pago {
-			margin: 0px;
-			padding: 0px;
-			padding-left: 50px;
+		margin: 0px;
+		padding: 0px;
+		padding-left: 50px;
 
-
-	img {
-			width: 200px;
-					
+		img {
+			width: 200px;		
 		}
-
 	}
 
 
 	form {
-
 		display: flex;
 	    justify-content: center;
 	    padding: 10px;
@@ -268,7 +222,6 @@ $color-dos: #FFCCFF;
 
 
 	h2 {
-
 		display: flex;
     	justify-content: center;
     	padding: 10px;
@@ -282,7 +235,6 @@ $color-dos: #FFCCFF;
 	justify-content: center;
 	padding: 10px;
 	background-color: #FFF7DF;
-
 }
 
 .redes {
@@ -294,23 +246,19 @@ $color-dos: #FFCCFF;
 	flex-wrap: wrap;
 	align-content: stretch;
 
-		.redes-items {
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			flex-wrap: nowrap;
-			flex-direction: row;
-			list-style-type: none;
-
-			}
-
+	.redes-items {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		list-style-type: none;
+	}
 }	
 		
 
 .historia {
-
 	p {
-		
 		color: #330066;
 		width: 100%;
 		margin: auto;
@@ -319,7 +267,6 @@ $color-dos: #FFCCFF;
 	}
 
 	h1 {
-			
 		color: $color-uno;
 		background-color: $color-dos;
 		font-size: 40px;
@@ -331,19 +278,6 @@ $color-dos: #FFCCFF;
 
 
 .imagenes3 {
-
-
-	@media (min-width: 767px){
-
-		display: grid;
-		grid-template-columns: 25% 25% 25% 25%;
-		grid-template-rows: repeat(1, 1fr);
-		grid-column-gap: 1%;
-		grid-row-gap: 1%;
-		padding: 30px;
-		margin:20px;
-	}
-
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: repeat(2, 1fr);
@@ -356,22 +290,13 @@ $color-dos: #FFCCFF;
 	justify-content: space-around;
 	align-items: center;
 	justify-items: stretch;
+
+	@media (min-width: 767px){
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-rows: 1fr;
+		grid-column-gap: 1%;
+		grid-row-gap: 1%;
+		padding: 30px;
+		margin: 20px;
+	}
 }
-
-
-	
-
-
-
-
-
-
-	
-
-
-
-
-
-
-	
-

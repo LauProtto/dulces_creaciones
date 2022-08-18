@@ -12,12 +12,10 @@
 
 .logo {
   display: flex;
-  justify-content: center;
-  flex: 1; }
+  justify-content: center; }
   @media (min-width: 767px) {
     .logo {
-      width: 100%;
-      display: flex; } }
+      width: 100%; } }
 
 .menu {
   display: flex;
@@ -31,12 +29,8 @@
   @media (min-width: 767px) {
     .menu {
       width: 100%;
-      display: flex;
       font-size: 40px;
-      column-gap: 50px;
-      justify-content: center;
-      margin: 2;
-      paddin: 2; } }
+      column-gap: 50px; } }
 
 .titulos {
   font-family: 'Roboto', sans-serif; }
@@ -78,9 +72,8 @@
   justify-items: stretch; }
   @media (min-width: 767px) {
     .imagenes {
-      display: grid;
       grid-template-columns: 25% 25% 25% 25%;
-      grid-template-rows: repeat(1, 1fr);
+      grid-template-rows: 1fr;
       grid-column-gap: 1%;
       grid-row-gap: 1%;
       padding: 10px; } }
@@ -99,9 +92,8 @@
   padding-top: 30px; }
   @media (min-width: 767px) {
     .imagenes2 {
-      display: grid;
       grid-template-columns: 25% 25% 25% 25%;
-      grid-template-rows: repeat(1, 1fr);
+      grid-template-rows: 1fr;
       grid-column-gap: 4px;
       grid-row-gap: 4px;
       padding: 10px; } }
@@ -118,9 +110,14 @@
   padding: 20px; }
   @media (min-width: 767px) {
     .boton {
-      display: flex;
       justify-content: center;
       padding: 10px; } }
+
+.grilla-cumple p {
+  color: #800080;
+  font-size: 15px;
+  text-align: center;
+  padding: 30px; }
 
 @media (min-width: 767px) {
   .grilla-cumple {
@@ -139,12 +136,6 @@
       text-align: center;
       padding: 30px; } }
 
-.grilla-cumple p {
-  color: #800080;
-  font-size: 15px;
-  text-align: center;
-  padding: 30px; }
-
 .grilla {
   border: none;
   display: grid;
@@ -157,15 +148,9 @@
   background-color: #FFF7DF; }
   @media (min-width: 767px) {
     .grilla {
-      border: none;
-      display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
-      justify-content: space-evenly;
-      align-items: center;
-      padding: 50px;
-      margin: 0px;
-      background-color: #FFF7DF; } }
+      margin: 0px; } }
   .grilla .metodos-pago {
     margin: 0px;
     padding: 0px;
@@ -232,9 +217,8 @@
   justify-items: stretch; }
   @media (min-width: 767px) {
     .imagenes3 {
-      display: grid;
       grid-template-columns: 25% 25% 25% 25%;
-      grid-template-rows: repeat(1, 1fr);
+      grid-template-rows: 1fr;
       grid-column-gap: 1%;
       grid-row-gap: 1%;
       padding: 30px;
