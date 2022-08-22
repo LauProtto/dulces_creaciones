@@ -1,5 +1,7 @@
 $color-uno: #800080;
 $color-dos: #FFCCFF;
+$color-tres: #F4E8FF;
+$color-cuatro: #FFDFF7;
 
 
 .responsive {
@@ -11,9 +13,15 @@ $color-dos: #FFCCFF;
 }
 
 
+@mixin fondo ($fondo) {
+
+	background-color: $fondo
+}
+
+
 .cabecera {
-	background-color: #FFBFEF;
-	background-image: linear-gradient(to bottom, #D2A5FF 1%, transparent 100%);
+	@include fondo ($color-dos)
+	background-image: linear-gradient(to top, #DDBBFF 1%, transparent 100%);
 	width: 100%;
 }
 		
@@ -31,11 +39,11 @@ $color-dos: #FFCCFF;
 
 .menu {
 	display: flex;
-	font-size: 18px;
+	font-size: 20px;
 	column-gap: 5px;
 	justify-content: center;
 	list-style-type: none;
-	background-color: $color-dos;
+	@include fondo ($color-dos)
 	margin: 0;
 	paddin:0;
 
@@ -46,6 +54,38 @@ $color-dos: #FFCCFF;
 	}
 }
 	
+.mensaje {
+
+	h1 {
+		color: #330066;
+		margin-top: 15px;
+		font-size: 25px;
+		text-align: center;
+		font-weight: 800;
+	}
+
+	.mensaje2 {
+		color: $color-uno;
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	img {
+		width: 100%;
+		display: flex;
+    	justify-content: center;
+
+
+	}
+
+
+}
+
+img, svg {
+    vertical-align: middle;
+    object-fit: cover;
+}
 
 
 .titulos { 
@@ -53,7 +93,7 @@ $color-dos: #FFCCFF;
 
 	h1 {
 		color: $color-uno;
-		background-color: $color-dos;
+		@include fondo ($color-dos)
 		font-size: 40px;
 		font-weight: bold;
 		text-align: center;
@@ -67,7 +107,7 @@ $color-dos: #FFCCFF;
 		color: $color-uno;
 		font-size: 30px;
 		text-align: center;
-    	background-color: $color-dos;
+    	@include fondo ($color-dos)
     	margin: 0;
     	paddin: 0;
     }
@@ -79,6 +119,7 @@ $color-dos: #FFCCFF;
 	}
 	
 }
+
 		
 .imagenes {
 	display: grid;
@@ -102,6 +143,17 @@ $color-dos: #FFCCFF;
 		grid-column-gap: 1%;
 		grid-row-gap: 1%;
 		padding: 10px;
+	}
+
+
+	article {
+		@include fondo ($color-tres)
+	}
+
+	h3 {
+		color: $color-uno;
+		font-size: 25px;
+		text-align: center;
 	}
 				
 }
@@ -131,8 +183,14 @@ $color-dos: #FFCCFF;
 	}
 
 
-	div {
-		background-color: #FFE8E8;
+	article {
+		@include fondo ($color-cuatro)
+	}
+
+	h3 {
+		color: $color-uno;
+		font-size: 25px;
+		text-align: center;
 	}
 
 }
@@ -261,8 +319,8 @@ $color-dos: #FFCCFF;
 	p {
 		color: #330066;
 		width: 100%;
-		margin: auto;
-		font-size: 17px;
+		margin-top: 15px;
+		font-size: 25px;
 		font-weight: 800;
 	}
 
@@ -300,3 +358,5 @@ $color-dos: #FFCCFF;
 		margin: 20px;
 	}
 }
+
+
