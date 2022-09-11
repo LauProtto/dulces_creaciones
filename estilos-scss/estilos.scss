@@ -39,18 +39,37 @@ $color-cuatro: #FFDFF7;
 
 .menu {
 	display: flex;
-	font-size: 20px;
-	column-gap: 5px;
-	justify-content: center;
-	list-style-type: none;
-	@include fondo ($color-dos)
-	margin: 0;
-	paddin:0;
+	flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    font-size: 20px;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #FFCCFF;
+    margin: 0;
+    paddin: 0;
+
+	a {
+
+		&:hover {
+	    	color: pink;
+	    	opacity: 0.5;
+	    }
+	}
+
 
 	@media (min-width: 767px){
 		width: 100%;
 		font-size: 40px;
 		column-gap: 50px;
+		display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    align-content: space-around;
+	    justify-content: center;
+	    list-style-type: none;
+	    background-color: #FFCCFF;
+	    margin: 0;
 	}
 }
 	
@@ -125,17 +144,14 @@ img, svg {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 4%;
-	grid-row-gap: 2%;
-	padding: 10%;
+	grid-column-gap: 1%;
+	grid-row-gap: 1%;
+	padding: 1%;
 	color: $color-uno;
 	font-size: 15px;
+	font-weight: italic;
 	text-align: center;
 	padding-top: 30px;
-	align-content: stretch;
-	justify-content: space-around;
-	align-items: center;
-	justify-items: stretch;
 
 	@media (min-width: 767px){
 		grid-template-columns: 25% 25% 25% 25%;
@@ -155,7 +171,7 @@ img, svg {
 		font-size: 25px;
 		text-align: center;
 	}
-				
+
 }
 
 		
@@ -196,6 +212,7 @@ img, svg {
 }
 
 .boton {
+	color: $color-dos;
 	display: flex;
 	flex-direction: column-reverse;
 	flex-wrap: wrap;
@@ -292,7 +309,7 @@ img, svg {
 	display: flex;
 	justify-content: center;
 	padding: 10px;
-	background-color: #FFF7DF;
+	background-color: $color-cuatro;
 }
 
 .redes {
@@ -341,7 +358,7 @@ img, svg {
 	grid-template-rows: repeat(2, 1fr);
 	grid-column-gap: 4%;
 	grid-row-gap: 2%;
-	padding: 10%;
+	padding: 4%;
 	text-align: center;
 	padding-top: 30px;
 	align-content: stretch;
