@@ -73,7 +73,7 @@ img, svg {
   .titulos h1 {
     color: #800080;
     background-color: #FFCCFF;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     font-family: 'BhuTuka Expanded One', cursive;
@@ -97,7 +97,7 @@ img, svg {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 1%;
   grid-row-gap: 1%;
-  padding: 1%;
+  padding: 10%;
   color: #800080;
   font-size: 15px;
   font-weight: italic;
@@ -116,7 +116,7 @@ img, svg {
     border-radius: 20px; }
   .imagenes h3 {
     color: #800080;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center; }
   .imagenes h4 {
     color: #800080;
@@ -154,7 +154,7 @@ img, svg {
     border-radius: 20px; }
   .imagenes2 h3 {
     color: #800080;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center; }
   .imagenes2 h4 {
     color: #800080;
@@ -176,39 +176,44 @@ img, svg {
   align-content: space-around;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px; }
+  padding: 25px;
+  margin-top: 10px; }
   @media (min-width: 767px) {
     .boton {
       justify-content: center;
       padding: 10px; } }
 
-.grilla-cumple p {
-  color: #800080;
-  font-size: 15px;
-  text-align: center;
-  padding: 30px; }
-
-.grilla-cumple img {
-  transform: rotate(10deg); }
-  .grilla-cumple img:hover {
-    transform: rotate(-10deg) scale(1); }
-
-@media (min-width: 767px) {
-  .grilla-cumple {
-    border: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px;
-    margin: 0px;
-    background-color: #FFF7DF; }
-    .grilla-cumple p {
-      color: #800080;
-      font-size: 25px;
-      text-align: center;
-      padding: 30px; } }
+.grilla-cumple {
+  background-color: #F4E8FF; }
+  .grilla-cumple p {
+    color: #800080;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px; }
+  .grilla-cumple img {
+    display: flex;
+    justify-content: center;
+    padding: 10px; }
+  @media (min-width: 767px) {
+    .grilla-cumple {
+      border: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 50px;
+      margin: 0px;
+      background-color: #F4E8FF; }
+      .grilla-cumple p {
+        color: #800080;
+        font-size: 25px;
+        text-align: center;
+        padding: 30px; }
+      .grilla-cumple img {
+        transform: rotate(5deg); }
+        .grilla-cumple img:hover {
+          transform: rotate(-5deg) scale(1); } }
 
 .grilla {
   border: none;
@@ -224,7 +229,7 @@ img, svg {
     .grilla {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
-      margin: 0px; } }
+      margin: 20px; } }
   .grilla .metodos-pago {
     margin: 0px;
     padding: 0px;
@@ -290,10 +295,7 @@ img, svg {
   align-items: center;
   justify-items: stretch; }
   .imagenes3 img {
-    border-radius: 20px;
-    transform: rotate(10deg); }
-    .imagenes3 img:hover {
-      transform: rotate(-10deg) scale(1); }
+    border-radius: 20px; }
   @media (min-width: 767px) {
     .imagenes3 {
       grid-template-columns: 25% 25% 25% 25%;
@@ -301,7 +303,12 @@ img, svg {
       grid-column-gap: 1%;
       grid-row-gap: 1%;
       padding: 30px;
-      margin: 20px; } }
+      margin: 20px; }
+      .imagenes3 img {
+        border-radius: 20px;
+        transform: rotate(10deg); }
+        .imagenes3 img:hover {
+          transform: rotate(-10deg) scale(1); } }
 
 .grilla2 {
   display: grid;

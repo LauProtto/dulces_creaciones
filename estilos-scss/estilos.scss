@@ -116,7 +116,7 @@ img, svg {
 	h1 {
 		color: $color-uno;
 		@include fondo ($color-dos)
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: bold;
 		text-align: center;
 		font-family: 'BhuTuka Expanded One', cursive;
@@ -149,13 +149,14 @@ img, svg {
 	grid-template-rows: repeat(2, 1fr);
 	grid-column-gap: 1%;
 	grid-row-gap: 1%;
-	padding: 1%;
+	padding: 10%;
 	color: $color-uno;
 	font-size: 15px;
 	font-weight: italic;
 	text-align: center;
 	padding-top: 30px;
 	text-underline: none;
+
 
 
 
@@ -176,7 +177,7 @@ img, svg {
 
 	h3 {
 		color: $color-uno;
-		font-size: 25px;
+		font-size: 20px;
 		text-align: center;
 	}
 
@@ -188,7 +189,6 @@ img, svg {
 
 	button {
 		border-radius: 12px;
-
 		transition-property: all;
 		transition-duration: 0.5s;
 		transition-timing-function: linear;
@@ -219,6 +219,7 @@ img, svg {
 	padding-top: 30px;
 
 
+
 	@media (min-width: 767px){
 		grid-template-columns: 25% 25% 25% 25%;;
 		grid-template-rows: 1fr;
@@ -235,7 +236,7 @@ img, svg {
 
 	h3 {
 		color: $color-uno;
-		font-size: 25px;
+		font-size: 20px;
 		text-align: center;
 	}
 
@@ -268,7 +269,8 @@ img, svg {
 	align-content: space-around;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 20px;
+	padding: 25px;
+	margin-top: 10px;
 
 	@media (min-width: 767px){
 		justify-content: center;
@@ -282,21 +284,24 @@ img, svg {
 
 
 .grilla-cumple {
+
+		background-color: $color-tres;
+
 	p {
 		color: $color-uno;
-		font-size: 15px;
+		font-size: 12px;
 		text-align: center;
-	    padding: 30px;
+	    padding: 20px;
+	    
 	}
 
 	img {
-	transform: rotate(10deg);
-
-		&:hover {
-			transform: rotate(-10deg) scale(1);
-		}
-
+		display: flex;
+		justify-content: center;
+		padding: 10px;
 	}
+
+	
 
 	@media (min-width: 767px){
 		border: none;
@@ -307,13 +312,22 @@ img, svg {
 		align-items: center;
 		padding: 50px;
 		margin: 0px;
-		background-color: #FFF7DF;
+		background-color: $color-tres;
 
 		p {
 			color: $color-uno;
 			font-size: 25px;
 			text-align: center;
 			padding: 30px;
+		}
+
+		img {
+			transform: rotate(5deg);
+
+			&:hover {
+				transform: rotate(-5deg) scale(1);
+			}
+
 		}
 	}
 }
@@ -333,7 +347,7 @@ img, svg {
 	@media (min-width: 767px){
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
-		margin: 0px;
+		margin: 20px;
 	}
 
 	.metodos-pago {
@@ -425,14 +439,11 @@ img, svg {
 	align-items: center;
 	justify-items: stretch;
 
+
 	img {
 		border-radius: 20px;
-		transform: rotate(10deg);
-
-		&:hover {
-			transform: rotate(-10deg) scale(1);
-		}
 	}
+	
 
 
 	@media (min-width: 767px){
@@ -442,6 +453,15 @@ img, svg {
 		grid-row-gap: 1%;
 		padding: 30px;
 		margin: 20px;
+
+		img {
+		border-radius: 20px;
+		transform: rotate(10deg);
+
+		&:hover {
+			transform: rotate(-10deg) scale(1);
+			}
+		}
 	}
 }
 
