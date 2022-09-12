@@ -16,6 +16,7 @@ $color-cuatro: #FFDFF7;
 @mixin fondo ($fondo) {
 
 	background-color: $fondo
+	
 }
 
 
@@ -23,6 +24,7 @@ $color-cuatro: #FFDFF7;
 	@include fondo ($color-dos)
 	background-image: linear-gradient(to top, #DDBBFF 1%, transparent 100%);
 	width: 100%;
+
 }
 		
 
@@ -45,15 +47,16 @@ $color-cuatro: #FFDFF7;
     font-size: 20px;
     justify-content: center;
     list-style-type: none;
-    background-color: #FFCCFF;
+    background-color: $color-dos;
     margin: 0;
     paddin: 0;
 
 	a {
+		transition: all 0.10s ease-in-out;
 
 		&:hover {
-	    	color: pink;
-	    	opacity: 0.5;
+	    
+	    	opacity: 0.3;
 	    }
 	}
 
@@ -152,6 +155,10 @@ img, svg {
 	font-weight: italic;
 	text-align: center;
 	padding-top: 30px;
+	text-underline: none;
+
+
+
 
 	@media (min-width: 767px){
 		grid-template-columns: 25% 25% 25% 25%;
@@ -164,12 +171,33 @@ img, svg {
 
 	article {
 		@include fondo ($color-tres)
+		border-radius: 20px;
 	}
 
 	h3 {
 		color: $color-uno;
 		font-size: 25px;
 		text-align: center;
+	}
+
+	h4 {
+		color: $color-uno;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	button {
+		border-radius: 12px;
+
+		transition-property: all;
+		transition-duration: 0.5s;
+		transition-timing-function: linear;
+
+		&:hover {
+	    	color: pink;
+	    
+	    }
+
 	}
 
 }
@@ -190,6 +218,7 @@ img, svg {
 	text-align: center;
 	padding-top: 30px;
 
+
 	@media (min-width: 767px){
 		grid-template-columns: 25% 25% 25% 25%;;
 		grid-template-rows: 1fr;
@@ -201,12 +230,32 @@ img, svg {
 
 	article {
 		@include fondo ($color-cuatro)
+		border-radius: 20px;
 	}
 
 	h3 {
 		color: $color-uno;
 		font-size: 25px;
 		text-align: center;
+	}
+
+	h4 {
+		color: $color-uno;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	button {
+		border-radius: 12px;
+
+		transition-property: all;
+		transition-duration: 0.5s;
+		transition-timing-function: linear;
+
+		&:hover {
+	    	color: pink;
+	    
+	    }
 	}
 
 }
@@ -238,6 +287,15 @@ img, svg {
 		font-size: 15px;
 		text-align: center;
 	    padding: 30px;
+	}
+
+	img {
+	transform: rotate(10deg);
+
+		&:hover {
+			transform: rotate(-10deg) scale(1);
+		}
+
 	}
 
 	@media (min-width: 767px){
@@ -284,7 +342,8 @@ img, svg {
 		padding-left: 50px;
 
 		img {
-			width: 200px;		
+			width: 200px;
+
 		}
 	}
 
@@ -366,6 +425,16 @@ img, svg {
 	align-items: center;
 	justify-items: stretch;
 
+	img {
+		border-radius: 20px;
+		transform: rotate(10deg);
+
+		&:hover {
+			transform: rotate(-10deg) scale(1);
+		}
+	}
+
+
 	@media (min-width: 767px){
 		grid-template-columns: 25% 25% 25% 25%;
 		grid-template-rows: 1fr;
@@ -377,3 +446,32 @@ img, svg {
 }
 
 
+.grilla2 {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 1%;
+	grid-row-gap: 1%;
+	padding: 1%;
+	color: $color-uno;
+	font-size: 15px;
+	font-weight: italic;
+	text-align: center;
+	padding-top: 30px;
+
+	@media (min-width: 767px){
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 1fr;
+		grid-column-gap: 1%;
+		grid-row-gap: 1%;
+		padding: 10px;
+	}
+
+	 p {
+	 	color: #330066;
+		width: 100%;
+		margin-top: 25px;
+		font-size: 20px;
+		font-weight: 700;
+	 }
+}

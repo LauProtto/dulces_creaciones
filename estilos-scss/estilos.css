@@ -28,9 +28,10 @@
   background-color: #FFCCFF;
   margin: 0;
   paddin: 0; }
-  .menu a:hover {
-    color: pink;
-    opacity: 0.5; }
+  .menu a {
+    transition: all 0.10s ease-in-out; }
+    .menu a:hover {
+      opacity: 0.3; }
   @media (min-width: 767px) {
     .menu {
       width: 100%;
@@ -101,7 +102,8 @@ img, svg {
   font-size: 15px;
   font-weight: italic;
   text-align: center;
-  padding-top: 30px; }
+  padding-top: 30px;
+  text-underline: none; }
   @media (min-width: 767px) {
     .imagenes {
       grid-template-columns: 25% 25% 25% 25%;
@@ -110,11 +112,23 @@ img, svg {
       grid-row-gap: 1%;
       padding: 10px; } }
   .imagenes article {
-    background-color: #F4E8FF; }
+    background-color: #F4E8FF;
+    border-radius: 20px; }
   .imagenes h3 {
     color: #800080;
     font-size: 25px;
     text-align: center; }
+  .imagenes h4 {
+    color: #800080;
+    font-size: 15px;
+    text-align: center; }
+  .imagenes button {
+    border-radius: 12px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear; }
+    .imagenes button:hover {
+      color: pink; }
 
 .imagenes2 {
   display: grid;
@@ -136,11 +150,23 @@ img, svg {
       grid-row-gap: 4px;
       padding: 10px; } }
   .imagenes2 article {
-    background-color: #FFDFF7; }
+    background-color: #FFDFF7;
+    border-radius: 20px; }
   .imagenes2 h3 {
     color: #800080;
     font-size: 25px;
     text-align: center; }
+  .imagenes2 h4 {
+    color: #800080;
+    font-size: 15px;
+    text-align: center; }
+  .imagenes2 button {
+    border-radius: 12px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear; }
+    .imagenes2 button:hover {
+      color: pink; }
 
 .boton {
   color: #FFCCFF;
@@ -161,6 +187,11 @@ img, svg {
   font-size: 15px;
   text-align: center;
   padding: 30px; }
+
+.grilla-cumple img {
+  transform: rotate(10deg); }
+  .grilla-cumple img:hover {
+    transform: rotate(-10deg) scale(1); }
 
 @media (min-width: 767px) {
   .grilla-cumple {
@@ -258,6 +289,11 @@ img, svg {
   justify-content: space-around;
   align-items: center;
   justify-items: stretch; }
+  .imagenes3 img {
+    border-radius: 20px;
+    transform: rotate(10deg); }
+    .imagenes3 img:hover {
+      transform: rotate(-10deg) scale(1); }
   @media (min-width: 767px) {
     .imagenes3 {
       grid-template-columns: 25% 25% 25% 25%;
@@ -266,5 +302,31 @@ img, svg {
       grid-row-gap: 1%;
       padding: 30px;
       margin: 20px; } }
+
+.grilla2 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+  padding: 1%;
+  color: #800080;
+  font-size: 15px;
+  font-weight: italic;
+  text-align: center;
+  padding-top: 30px; }
+  @media (min-width: 767px) {
+    .grilla2 {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 1fr;
+      grid-column-gap: 1%;
+      grid-row-gap: 1%;
+      padding: 10px; } }
+  .grilla2 p {
+    color: #330066;
+    width: 100%;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 700; }
 
 /*# sourceMappingURL=estilos.css.map */
