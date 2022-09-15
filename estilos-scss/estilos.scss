@@ -147,25 +147,38 @@ img, svg {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 1%;
-	grid-row-gap: 1%;
-	padding: 10%;
+	grid-column-gap: 2%;
+	grid-row-gap: 2%;
+	padding: 5%;
 	color: $color-uno;
 	font-size: 15px;
 	font-weight: italic;
 	text-align: center;
 	padding-top: 30px;
-	text-underline: none;
+	Padding-bottom: 10%;
 
+	a {
+		transition: all 0.10s ease-in-out;
 
+		&:hover {
+	    
+	    	opacity: 0.3;
+	    }
+	}
 
+	img {
+
+		border-radius: 10px;
+	}
 
 
 	@media (min-width: 767px){
 		grid-template-columns: 25% 25% 25% 25%;
 		grid-template-rows: 1fr;
-		grid-column-gap: 1%;
-		grid-row-gap: 1%;
+		grid-column-gap: 4px;
+		grid-row-gap: 4px;
+		justify-content: space-around;
+    	justify-items: stretch;
 		padding: 10px;
 	}
 
@@ -187,18 +200,7 @@ img, svg {
 		text-align: center;
 	}
 
-	button {
-		border-radius: 12px;
-		transition-property: all;
-		transition-duration: 0.5s;
-		transition-timing-function: linear;
-
-		&:hover {
-	    	color: pink;
-	    
-	    }
-
-	}
+	
 
 }
 
@@ -209,15 +211,30 @@ img, svg {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 1%;
-	grid-row-gap: 1%;
-	padding: 1%;
+	grid-column-gap: 2%;
+	grid-row-gap: 2%;
+	padding: 5%;
 	color: $color-uno;
 	font-size: 15px;
 	font-weight: italic;
 	text-align: center;
-	padding-top: 30px;
+	padding-bottom: 50%;
+	text-underline: none;
 
+
+	a {
+		transition: all 0.10s ease-in-out;
+
+		&:hover {
+	    
+	    	opacity: 0.3;
+	    }
+	}
+
+	img {
+
+		border-radius: 10px;
+	}
 
 
 	@media (min-width: 767px){
@@ -225,13 +242,15 @@ img, svg {
 		grid-template-rows: 1fr;
 		grid-column-gap: 4px;
 		grid-row-gap: 4px;
+		justify-content: space-around;
+    	justify-items: stretch;
 		padding: 10px;
 	}
 
 
 	article {
 		@include fondo ($color-cuatro)
-		border-radius: 20px;
+		border-radius: 10px;
 	}
 
 	h3 {
@@ -246,31 +265,27 @@ img, svg {
 		text-align: center;
 	}
 
-	button {
-		border-radius: 12px;
-
-		transition-property: all;
-		transition-duration: 0.5s;
-		transition-timing-function: linear;
-
-		&:hover {
-	    	color: pink;
-	    
-	    }
-	}
 
 }
 
 .boton {
-	color: $color-dos;
 	display: flex;
 	flex-direction: column-reverse;
 	flex-wrap: wrap;
 	align-content: space-around;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 25px;
+	padding: 15px;
 	margin-top: 10px;
+
+	a {
+		transition: all 0.10s ease-in-out;
+
+		&:hover {
+	    
+	    	opacity: 0.3;
+	    }
+	}
 
 	@media (min-width: 767px){
 		justify-content: center;
@@ -340,9 +355,8 @@ img, svg {
 	grid-template-rows: 2fr;
 	justify-content: space-evenly;
 	align-items: center;
-	padding: 50px;
-	margin-top: 60px;
-	background-color: #FFF7DF;
+	justify-items: center;
+
 
 	@media (min-width: 767px){
 		grid-template-columns: 1fr 1fr;
@@ -351,8 +365,6 @@ img, svg {
 	}
 
 	.metodos-pago {
-		margin: 0px;
-		padding: 0px;
 		padding-left: 50px;
 
 		img {
@@ -432,6 +444,7 @@ img, svg {
 	grid-column-gap: 4%;
 	grid-row-gap: 2%;
 	padding: 4%;
+	padding-bottom: 15%;
 	text-align: center;
 	padding-top: 30px;
 	align-content: stretch;
@@ -477,7 +490,7 @@ img, svg {
 	font-size: 15px;
 	font-weight: italic;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 10px;
 
 	@media (min-width: 767px){
 		grid-template-columns: 50% 50%;

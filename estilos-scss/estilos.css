@@ -95,21 +95,29 @@ img, svg {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 1%;
-  grid-row-gap: 1%;
-  padding: 10%;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  padding: 5%;
   color: #800080;
   font-size: 15px;
   font-weight: italic;
   text-align: center;
   padding-top: 30px;
-  text-underline: none; }
+  Padding-bottom: 10%; }
+  .imagenes a {
+    transition: all 0.10s ease-in-out; }
+    .imagenes a:hover {
+      opacity: 0.3; }
+  .imagenes img {
+    border-radius: 10px; }
   @media (min-width: 767px) {
     .imagenes {
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: 1fr;
-      grid-column-gap: 1%;
-      grid-row-gap: 1%;
+      grid-column-gap: 4px;
+      grid-row-gap: 4px;
+      justify-content: space-around;
+      justify-items: stretch;
       padding: 10px; } }
   .imagenes article {
     background-color: #F4E8FF;
@@ -122,36 +130,38 @@ img, svg {
     color: #800080;
     font-size: 15px;
     text-align: center; }
-  .imagenes button {
-    border-radius: 12px;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: linear; }
-    .imagenes button:hover {
-      color: pink; }
 
 .imagenes2 {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 1%;
-  grid-row-gap: 1%;
-  padding: 1%;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  padding: 5%;
   color: #800080;
   font-size: 15px;
   font-weight: italic;
   text-align: center;
-  padding-top: 30px; }
+  padding-bottom: 50%;
+  text-underline: none; }
+  .imagenes2 a {
+    transition: all 0.10s ease-in-out; }
+    .imagenes2 a:hover {
+      opacity: 0.3; }
+  .imagenes2 img {
+    border-radius: 10px; }
   @media (min-width: 767px) {
     .imagenes2 {
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: 1fr;
       grid-column-gap: 4px;
       grid-row-gap: 4px;
+      justify-content: space-around;
+      justify-items: stretch;
       padding: 10px; } }
   .imagenes2 article {
     background-color: #FFDFF7;
-    border-radius: 20px; }
+    border-radius: 10px; }
   .imagenes2 h3 {
     color: #800080;
     font-size: 20px;
@@ -160,24 +170,20 @@ img, svg {
     color: #800080;
     font-size: 15px;
     text-align: center; }
-  .imagenes2 button {
-    border-radius: 12px;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: linear; }
-    .imagenes2 button:hover {
-      color: pink; }
 
 .boton {
-  color: #FFCCFF;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: flex-start;
   align-items: center;
-  padding: 25px;
+  padding: 15px;
   margin-top: 10px; }
+  .boton a {
+    transition: all 0.10s ease-in-out; }
+    .boton a:hover {
+      opacity: 0.3; }
   @media (min-width: 767px) {
     .boton {
       justify-content: center;
@@ -222,17 +228,13 @@ img, svg {
   grid-template-rows: 2fr;
   justify-content: space-evenly;
   align-items: center;
-  padding: 50px;
-  margin-top: 60px;
-  background-color: #FFF7DF; }
+  justify-items: center; }
   @media (min-width: 767px) {
     .grilla {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       margin: 20px; } }
   .grilla .metodos-pago {
-    margin: 0px;
-    padding: 0px;
     padding-left: 50px; }
     .grilla .metodos-pago img {
       width: 200px; }
@@ -288,6 +290,7 @@ img, svg {
   grid-column-gap: 4%;
   grid-row-gap: 2%;
   padding: 4%;
+  padding-bottom: 15%;
   text-align: center;
   padding-top: 30px;
   align-content: stretch;
@@ -321,7 +324,7 @@ img, svg {
   font-size: 15px;
   font-weight: italic;
   text-align: center;
-  padding-top: 30px; }
+  padding-top: 10px; }
   @media (min-width: 767px) {
     .grilla2 {
       grid-template-columns: 50% 50%;
